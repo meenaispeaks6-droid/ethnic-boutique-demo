@@ -51,8 +51,9 @@ nav{display:flex;align-items:center;justify-content:space-between;height:72px}
 .nav-links a:hover{opacity:1}
 @media(max-width:820px){.nav-links{display:none}}
 /* hero */
-.hero{min-height:92vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:48px;padding-top:110px}
-@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:120px}}
+.hero{padding:130px 0 3.5rem}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:48px}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
 .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin:.9rem 0 1.2rem}
 .hero h1 em{font-style:italic;color:var(--wine)}
 .hero p{max-width:46ch;color:var(--ink-soft);font-weight:300;font-size:1.02rem}
@@ -136,7 +137,7 @@ footer b{color:var(--gold);font-weight:600}
 </header>
 
 <section class="hero">
-  <div class="wrap" style="display:contents">
+  <div class="wrap hero-grid">
     <div class="rv">
       <span class="eyebrow">Jaipur · Made to Measure</span>
       <h1>Woven by hand,<br>worn for <em>generations.</em></h1>
@@ -147,7 +148,7 @@ footer b{color:var(--gold);font-weight:600}
       </div>
     </div>
     <div class="hero-img rv">
-      <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=1000&q=80" alt="Bridal lehenga detail">
+      <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=1000&q=80" alt="Bridal lehenga detail" loading="eager">
       <span class="hero-cap">Bridal '26 · Look 07</span>
     </div>
   </div>
