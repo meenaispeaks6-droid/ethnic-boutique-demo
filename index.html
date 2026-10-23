@@ -58,7 +58,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:72px}
 .hero h1 em{font-style:italic;color:var(--wine)}
 .hero p{max-width:46ch;color:var(--ink-soft);font-weight:300;font-size:1.02rem}
 .hero-ctas{display:flex;gap:1rem;margin-top:2.2rem;flex-wrap:wrap}
-.hero-img{height:min(72vh,640px);border-radius:200px 200px 12px 12px;overflow:hidden;position:relative}
+.hero-img{height:min(72vh,640px);min-height:540px;border-radius:200px 200px 12px 12px;overflow:hidden;position:relative;background:url('https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=1000&q=80') center/cover no-repeat;background-color:#E4D8C6}
 .hero-img img{height:100%}
 .hero-cap{position:absolute;bottom:18px;left:18px;background:rgba(246,241,232,.92);padding:.5rem 1rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;border-radius:999px}
 /* marquee */
@@ -138,7 +138,7 @@ footer b{color:var(--gold);font-weight:600}
 
 <section class="hero">
   <div class="wrap hero-grid">
-    <div class="rv">
+    <div>
       <span class="eyebrow">Jaipur · Made to Measure</span>
       <h1>Woven by hand,<br>worn for <em>generations.</em></h1>
       <p>Leheriya, gota patti and hand-block silks from our own karigar families. Every Aarohi piece is cut once, for one woman, and finished in-house over 40 to 90 hours.</p>
@@ -147,8 +147,7 @@ footer b{color:var(--gold);font-weight:600}
         <a class="btn ghost" href="#visit">Book a Studio Visit</a>
       </div>
     </div>
-    <div class="hero-img rv">
-      <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=1000&q=80" alt="Bridal lehenga detail" loading="eager">
+    <div class="hero-img">
       <span class="hero-cap">Bridal '26 · Look 07</span>
     </div>
   </div>
